@@ -4,12 +4,11 @@ kind: Pod
 metadata:
   name: myapp-pod2
   annotations:
-    buildversion: 1.10
+    build: "1"
   labels:
     app: newapp
 spec:
   containers:
   - name: nginx-container
     image: nginx
-  nodename: worker
 ...
