@@ -1,5 +1,6 @@
 ---
 - import_playbook: install_docker.yaml
 - import_playbook: install_k8_master.yaml
-- import_playbook: import_k8_worker.yaml
+- import_playbook: configure_k8_master.yaml
+- import_playbook: install_k8_worker.yaml
 ...
