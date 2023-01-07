@@ -15,6 +15,6 @@ Vagrant.configure("2") do |config|
      sudo ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa
      sudo echo -e "\n172.18.0.10   master\n172.18.0.11   worker1\n172.18.0.12   worker2\n " >> /etc/hosts
      sudo expect /tmp/kubernetes_examples/vagrant/passwordless
-
+     sudo ansible-playbook -i /tmp/kubernetes_examples/ansible/inventory /tmp/kubernetes_examples/ansible/main.yaml
    SHELL
 end
